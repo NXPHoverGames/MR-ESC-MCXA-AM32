@@ -6,10 +6,11 @@
 	(paper "A3")
 	(title_block
 		(title "AM32 ESC with MCXA153")
+		(date "2024-12-20")
 		(rev "0")
 		(company "NXP Semiconductors")
 		(comment 1 "Designer: Youri Tils")
-		(comment 2 "Reviewer: ")
+		(comment 2 "Reviewer: Jari van Ewijk, Peter van der Perk")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Current:INA180B1"
@@ -4928,16 +4929,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 40.64) (xy 341.63 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e796a4f-aca3-406e-a21b-4195aaa1e43e")
-	)
-	(wire
-		(pts
 			(xy 123.19 124.46) (xy 123.19 121.92)
 		)
 		(stroke
@@ -5778,16 +5769,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 45.72) (xy 341.63 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a13689a6-2d80-4ebd-825b-d804ae04097f")
-	)
-	(wire
-		(pts
 			(xy 110.49 33.02) (xy 127 33.02)
 		)
 		(stroke
@@ -6336,16 +6317,6 @@
 		)
 		(uuid "fe48cb12-15ed-4ff7-8da0-fd341cadeeff")
 	)
-	(text "Unused pins"
-		(exclude_from_sim no)
-		(at 343.662 36.322 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "05eb7a06-8980-453d-8087-8a6a82d00a53")
-	)
 	(text "Is optional,\nSo solder pads"
 		(exclude_from_sim no)
 		(at 362.458 68.834 0)
@@ -6725,17 +6696,6 @@
 		)
 		(uuid "579673d9-accc-46c7-81fb-e13dab261f62")
 	)
-	(label "P1_30"
-		(at 335.28 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "58dd49d1-63ec-4d1f-a97c-d7c7a41b6094")
-	)
 	(label "TX"
 		(at 124.46 111.76 180)
 		(fields_autoplaced yes)
@@ -6845,17 +6805,6 @@
 			(justify right bottom)
 		)
 		(uuid "75d8926b-6d15-4677-a204-d2c05cf637bb")
-	)
-	(label "P1_31"
-		(at 335.28 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "80991c65-5eaf-4afd-8788-dc2535fd9d89")
 	)
 	(label "BEMF_COMMON"
 		(at 107.95 121.92 0)
@@ -7109,17 +7058,6 @@
 			(justify left bottom)
 		)
 		(uuid "cde0fc30-470e-4007-abe1-a477e617b85e")
-	)
-	(label "RX"
-		(at 341.63 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d46fa565-a6bd-41ef-9383-d3ca98e2d254")
 	)
 	(label "TX"
 		(at 45.72 66.04 180)
@@ -7410,7 +7348,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "04a0d8cb-1779-4757-ad45-5e2af8748f8f")
 		(property "Reference" "TP13"
@@ -13982,7 +13920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switches:NanoTxxxAS"
+		(property "Footprint" "Switches:TS2306A"
 			(at 101.6 146.05 0)
 			(effects
 				(font
@@ -13991,7 +13929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/2866/nanot.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303211800_SHOU-HAN-TS2306A-200gf-002_C5363482.pdf"
 			(at 101.6 146.05 0)
 			(effects
 				(font
@@ -14009,7 +13947,7 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "C&K"
+		(property "MF" "SHOU HAN"
 			(at 106.68 146.05 0)
 			(effects
 				(font
@@ -14018,7 +13956,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFPN" "NANOT 160 AS"
+		(property "MFPN" "TS2306A 200gf 002"
 			(at 106.68 146.05 0)
 			(effects
 				(font
@@ -14027,7 +13965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "DigiKey"
+		(property "Supplier" "JLCPCB"
 			(at 106.68 146.05 0)
 			(effects
 				(font
@@ -14036,7 +13974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier PN" "108-NANOT160ASCT-ND"
+		(property "Supplier PN" "C5363482"
 			(at 106.68 146.05 0)
 			(effects
 				(font
@@ -14401,107 +14339,6 @@
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 346.71 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "729d1fe0-6dbb-46c5-831b-ebefa80b4cbc")
-		(property "Reference" "J4"
-			(at 349.504 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P1_31"
-			(at 350.774 44.958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFPN" ""
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" ""
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier PN" ""
-			(at 346.71 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65efa1ae-4658-4d93-9987-5b950c5686ae")
-		)
-		(instances
-			(project "AM32_NXP_version"
-				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -17112,71 +16949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 346.71 40.64 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf1d4480-a017-4bff-9409-b88fa7a3a98f")
-		(property "Reference" "J3"
-			(at 349.504 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P1_30"
-			(at 350.774 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 346.71 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 346.71 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 346.71 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c2d15e23-cb84-466e-8f85-19a4541a5c97")
-		)
-		(instances
-			(project "AM32_NXP_version"
-				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 29.21 127 0)
 		(unit 1)
@@ -19400,107 +19172,6 @@
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 346.71 50.8 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "f66fccb4-d538-4426-9cea-90978f032956")
-		(property "Reference" "J5"
-			(at 349.504 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P1_8"
-			(at 350.774 50.038 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFPN" ""
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" ""
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier PN" ""
-			(at 346.71 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "42bd84d5-b9ab-4431-91b6-226546c4cc44")
-		)
-		(instances
-			(project "AM32_NXP_version"
-				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J5")
 					(unit 1)
 				)
 			)
