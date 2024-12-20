@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "RGB_LED")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/RGB_LED.kicad_sym")(options "")(descr ""))
+)
