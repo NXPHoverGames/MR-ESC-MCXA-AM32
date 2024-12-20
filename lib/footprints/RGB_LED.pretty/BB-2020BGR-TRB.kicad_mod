@@ -1,0 +1,172 @@
+(footprint "BB-2020BGR-TRB"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9b61c3b2-c9eb-4924-9b86-5d387aecdc86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "BB-2020BGR-TRB"
+		(at 0 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f83740fd-98ef-4c22-bc19-dbe2966f7da4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 -6.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ee835b9-b316-47cf-bb4a-d4e1910400d2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.americanbrightled.com/pdffiles/led-components/plcc/BB-2020BGR-TRB.pdf"
+		(at 0 2.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9da06ea7-e7ac-41dd-a39a-784d524bf663")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -6.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83c5abcb-7b56-4fdf-91ca-27cf4cf81bbd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.95 -0.25)
+		(end -0.95 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "775734f5-1a3c-4281-86b4-dbdbce70203e")
+	)
+	(fp_line
+		(start 0.95 -0.25)
+		(end 0.95 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f73f8f3b-a122-482c-a378-8ba5165bb3e5")
+	)
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "fa5e8951-63f3-4f74-b063-f07832d7e026")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -3.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "db261e46-41de-4d97-a966-ec1f6e4448cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 -0.8)
+		(size 0.4 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "34b870d2-50de-406a-8f7f-5311149f9b55")
+	)
+	(pad "2" smd roundrect
+		(at 0.9 0.8)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "efe0763f-afb4-40cc-81f9-76cfcb81b1e1")
+	)
+	(pad "3" smd roundrect
+		(at 0.9 -0.8)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "1c6932b1-7708-4cf1-af54-27cb05d3d7bc")
+	)
+	(pad "4" smd roundrect
+		(at -0.9 0.8)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "a945ca89-2e7a-43e5-9c73-c21f96a137ac")
+	)
+	(pad "5" smd roundrect
+		(at -0.9 -0.8)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "0781ba0e-b371-48ea-9a66-d892c55c04d7")
+	)
+	(pad "6" smd roundrect
+		(at 0 0.7)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "3c2e793d-f64a-472d-9403-f48cfc8ab876")
+	)
+	(model "${KIPRJMOD}/lib/3d-models/BB-2020BGR-TRB.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 -90)
+		)
+	)
+)
