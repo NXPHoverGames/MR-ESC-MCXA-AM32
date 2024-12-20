@@ -536,23 +536,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.62 0)
+			(property "Reference" "J13"
+				(at 4.572 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "DEBUG"
+				(at 4.572 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -571,6 +573,42 @@
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "JST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFPN" "BM06B-SRSS-TB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "DigiKey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier PN" "455-BM06B-SRSS-TBCT-ND"
 				(at 0 0 0)
 				(effects
 					(font
@@ -666,7 +704,7 @@
 				)
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(end 3.81 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -776,6 +814,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 1.27 -12.7 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2666,293 +2722,6 @@
 				)
 			)
 		)
-		(symbol "LED:APA102-2020"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "APA102-2020"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED-APA102-2020"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*APA102*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "APA102-2020_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "APA102-2020_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "APA102-2020_1_1"
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "CKO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "CKI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "MCU_NXP_MCX:MCXA13x_QFN32"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3599,6 +3368,175 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RGB_LED:BB-2020BGR-TRB"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0.762 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BB-2020BGR-TRB"
+				(at 15.494 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "RGB_LED:BB-2020BGR-TRB"
+				(at 5.08 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.americanbrightled.com/pdffiles/led-components/plcc/BB-2020BGR-TRB.pdf"
+				(at 52.578 -17.526 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Addressable, Dimmable, 2020 RGB LED"
+				(at 27.686 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BB-2020BGR-TRB_1_1"
+				(rectangle
+					(start 0 0)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "DI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -5.08 0)
+					(length 2.54)
+					(name "CI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "CO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5200,7 +5138,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 133.35) (xy 339.09 132.08)
+			(xy 340.36 121.92) (xy 340.36 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5580,7 +5518,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 102.87) (xy 340.36 102.87)
+			(xy 340.36 77.47) (xy 341.63 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5640,7 +5578,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 104.14) (xy 339.09 102.87)
+			(xy 340.36 78.74) (xy 340.36 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5930,6 +5868,16 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 106.68) (xy 340.36 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b741d34c-3cf9-4ff8-bcb0-a1b871063087")
+	)
+	(wire
+		(pts
 			(xy 57.15 144.78) (xy 57.15 146.05)
 		)
 		(stroke
@@ -6020,7 +5968,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 132.08) (xy 340.36 132.08)
+			(xy 340.36 120.65) (xy 341.63 120.65)
 		)
 		(stroke
 			(width 0)
@@ -6060,7 +6008,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 119.38) (xy 340.36 119.38)
+			(xy 340.36 107.95) (xy 341.63 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6350,16 +6298,6 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 118.11) (xy 339.09 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f80e8a01-fc57-4d4e-9835-9f3d013cd5a0")
-	)
-	(wire
-		(pts
 			(xy 257.81 109.22) (xy 260.35 109.22)
 		)
 		(stroke
@@ -6410,7 +6348,7 @@
 	)
 	(text "Is optional,\nSo solder pads"
 		(exclude_from_sim no)
-		(at 361.188 94.234 0)
+		(at 362.458 68.834 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6420,7 +6358,7 @@
 	)
 	(text "JST-SH BM06B-SRSS"
 		(exclude_from_sim no)
-		(at 358.648 129.54 0)
+		(at 359.918 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6513,7 +6451,7 @@
 		(uuid "102d7cff-50c2-4091-bc65-a4285c83a8e8")
 	)
 	(label "ENC_B"
-		(at 340.36 92.71 180)
+		(at 341.63 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6667,7 +6605,7 @@
 		(uuid "441dd90e-bccb-4ba3-9063-d3c9e12d7660")
 	)
 	(label "SWO{slash}TDO"
-		(at 340.36 124.46 180)
+		(at 341.63 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7074,7 +7012,7 @@
 		(uuid "ae8c99b4-db8a-46a8-b464-c728c583f093")
 	)
 	(label "ENC_A"
-		(at 340.36 87.63 180)
+		(at 341.63 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7107,7 +7045,7 @@
 		(uuid "b369b8bb-c240-496a-a95f-8d7d19645219")
 	)
 	(label "ENC_I"
-		(at 340.36 97.79 180)
+		(at 341.63 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7118,7 +7056,7 @@
 		(uuid "b5703810-88ac-45eb-8af9-a2391243c299")
 	)
 	(label "NC{slash}TDI"
-		(at 340.36 121.92 180)
+		(at 341.63 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7261,7 +7199,7 @@
 		(uuid "f0af5946-f79f-4ad9-b183-8fe1d8d9370b")
 	)
 	(label "SWDIO{slash}TMS"
-		(at 340.36 127 180)
+		(at 341.63 115.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7272,7 +7210,7 @@
 		(uuid "f7ceb6d4-7946-402a-b86b-12e9ae00773a")
 	)
 	(label "SWCLK{slash}TCLK"
-		(at 340.36 129.54 180)
+		(at 341.63 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7578,7 +7516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0773ccb7-f3fa-47cd-8f99-302c7b39be1a")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR025"
 			(at 330.2 148.59 0)
 			(effects
 				(font
@@ -7628,7 +7566,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR022")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7644,7 +7582,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07bcf365-005b-4c58-aef0-348d6b17e396")
-		(property "Reference" "R7"
+		(property "Reference" "R10"
 			(at 384.81 210.8199 0)
 			(effects
 				(font
@@ -7716,7 +7654,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R7")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7732,7 +7670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08d5e0ae-2f43-471a-91db-0ce29e53a787")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR04"
 			(at 147.32 95.25 0)
 			(effects
 				(font
@@ -7782,7 +7720,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR03")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7925,7 +7863,7 @@
 		(at 308.61 205.74 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8259,7 +8197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "127f2395-2e86-4ca4-97be-b75be7fadf07")
-		(property "Reference" "C19"
+		(property "Reference" "C18"
 			(at 32.004 121.92 0)
 			(effects
 				(font
@@ -8349,7 +8287,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "C19")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -8428,7 +8366,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "16742f4a-4825-4499-8d29-79a8441a9bc5")
@@ -8525,16 +8463,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 345.44 102.87 0)
+		(at 346.71 77.47 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "16887178-328e-469b-92b7-2b212b54d2d1")
 		(property "Reference" "J12"
-			(at 348.234 104.14 0)
+			(at 349.504 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8542,7 +8480,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 349.504 102.108 0)
+			(at 350.774 76.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8550,7 +8488,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8559,7 +8497,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8568,7 +8506,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8577,7 +8515,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8586,7 +8524,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8595,7 +8533,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,7 +8542,7 @@
 			)
 		)
 		(property "Supplier PN" ""
-			(at 345.44 102.87 0)
+			(at 346.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8787,7 +8725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18e55ec0-f722-4766-84d4-4106e9872ec2")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 48.26 246.6974 90)
 			(effects
 				(font
@@ -8877,7 +8815,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -8888,7 +8826,7 @@
 		(at 127 226.06 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9169,16 +9107,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 345.44 92.71 0)
+		(at 346.71 67.31 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "1cef2bd1-f4b6-44c7-8dca-1f8d252b38c7")
-		(property "Reference" "J8"
-			(at 348.234 93.98 0)
+		(property "Reference" "J10"
+			(at 349.504 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9186,7 +9124,7 @@
 			)
 		)
 		(property "Value" "ENC_B"
-			(at 349.504 91.948 0)
+			(at 350.774 66.548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9194,7 +9132,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9203,7 +9141,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9212,7 +9150,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9221,7 +9159,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9230,7 +9168,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9239,7 +9177,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9248,7 +9186,7 @@
 			)
 		)
 		(property "Supplier PN" ""
-			(at 345.44 92.71 0)
+			(at 346.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9262,7 +9200,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J8")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -9741,7 +9679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22cf4181-e848-463c-9bd1-8a10f4b95165")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 229.87 95.25 0)
 			(effects
 				(font
@@ -9791,7 +9729,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9990,7 +9928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2609c53a-3617-417a-9ba0-343d33367d8c")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 229.87 105.41 0)
 			(effects
 				(font
@@ -10040,7 +9978,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10228,7 +10166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29c3de4a-8f8a-46a5-b546-02cfbaba330e")
-		(property "Reference" "C20"
+		(property "Reference" "C19"
 			(at 60.96 121.9199 0)
 			(effects
 				(font
@@ -10318,7 +10256,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "C20")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -10502,11 +10440,11 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2cb83850-08d2-4ed8-904c-d610ddbe1416")
-		(property "Reference" "J11"
+		(property "Reference" "J8"
 			(at 35.814 77.47 0)
 			(effects
 				(font
@@ -10591,7 +10529,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J11")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -10724,7 +10662,7 @@
 		(at 172.72 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11016,7 +10954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30f61689-f15d-45a0-a7e6-3eab96a49192")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
 			(at 57.15 148.59 0)
 			(effects
 				(font
@@ -11066,7 +11004,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR025")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -11077,7 +11015,7 @@
 		(at 218.44 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11146,7 +11084,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3175ba6d-ac10-4277-8813-2ef41c70cc54")
-		(property "Reference" "R8"
+		(property "Reference" "R5"
 			(at 134.62 205.994 90)
 			(effects
 				(font
@@ -11216,7 +11154,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R8")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -11228,7 +11166,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "32b32e95-ad5a-44e0-a1f3-8b411a2f460b")
@@ -11333,7 +11271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "344da8ec-e848-4c25-80d6-85d161247cef")
-		(property "Reference" "C18"
+		(property "Reference" "C20"
 			(at 247.65 123.1962 0)
 			(effects
 				(font
@@ -11423,7 +11361,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "C18")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -11434,7 +11372,7 @@
 		(at 308.61 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11764,7 +11702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a044e4b-a673-4727-86b2-789d8005fcad")
-		(property "Reference" "R5"
+		(property "Reference" "R8"
 			(at 318.77 210.8199 0)
 			(effects
 				(font
@@ -11836,7 +11774,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -12061,7 +11999,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 339.09 104.14 0)
+		(at 340.36 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12069,8 +12007,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "411df413-2625-4a2c-a6e0-aa5f21060941")
-		(property "Reference" "#PWR09"
-			(at 339.09 110.49 0)
+		(property "Reference" "#PWR010"
+			(at 340.36 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12079,7 +12017,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.09 109.22 0)
+			(at 340.36 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12087,7 +12025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 104.14 0)
+			(at 340.36 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12096,7 +12034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 104.14 0)
+			(at 340.36 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12105,7 +12043,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 339.09 104.14 0)
+			(at 340.36 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12119,7 +12057,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -12127,16 +12065,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 345.44 87.63 0)
+		(at 346.71 62.23 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "41e9f368-fc4f-4fed-b2f5-bbb2d66de2d4")
-		(property "Reference" "J6"
-			(at 348.234 88.9 0)
+		(property "Reference" "J9"
+			(at 349.504 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12144,7 +12082,7 @@
 			)
 		)
 		(property "Value" "ENC_A"
-			(at 349.504 86.868 0)
+			(at 350.774 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12152,7 +12090,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12161,7 +12099,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12170,7 +12108,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12179,7 +12117,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12188,7 +12126,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12197,7 +12135,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12206,7 +12144,7 @@
 			)
 		)
 		(property "Supplier PN" ""
-			(at 345.44 87.63 0)
+			(at 346.71 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12220,7 +12158,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J6")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -12411,7 +12349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "45b7089b-c0db-4bf4-a716-02b5e35922d3")
-		(property "Reference" "U5"
+		(property "Reference" "U6"
 			(at 165.1 254 0)
 			(effects
 				(font
@@ -12508,7 +12446,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "U5")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -12519,7 +12457,7 @@
 		(at 341.63 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12669,12 +12607,12 @@
 		(at 35.56 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4941bdd8-4831-49fb-a233-f9ba34c51d6c")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 36.195 35.56 0)
 			(effects
 				(font
@@ -12723,7 +12661,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12734,7 +12672,7 @@
 		(at 127 210.82 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12800,7 +12738,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4e14a150-e644-4c2e-b167-f36f4e3d6ef6")
@@ -13294,7 +13232,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 339.09 118.11 0)
+		(at 340.36 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13302,8 +13240,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53cbb835-7693-476d-9438-57c960f3b209")
-		(property "Reference" "#PWR013"
-			(at 339.09 121.92 0)
+		(property "Reference" "#PWR015"
+			(at 340.36 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13312,7 +13250,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 339.09 113.03 0)
+			(at 340.36 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13320,7 +13258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 118.11 0)
+			(at 340.36 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13329,7 +13267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 118.11 0)
+			(at 340.36 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13338,7 +13276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 339.09 118.11 0)
+			(at 340.36 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13352,7 +13290,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR013")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -13515,7 +13453,7 @@
 		(at 205.74 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13850,12 +13788,12 @@
 		(at 35.56 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6313d34b-d9d3-4333-b6b6-5d161840dbcf")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 36.195 27.94 0)
 			(effects
 				(font
@@ -13904,7 +13842,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -14198,7 +14136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6967afef-5859-4151-a4dd-f25a47545fb6")
-		(property "Reference" "R6"
+		(property "Reference" "R9"
 			(at 351.79 210.8199 0)
 			(effects
 				(font
@@ -14270,7 +14208,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R6")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -14474,11 +14412,11 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "729d1fe0-6dbb-46c5-831b-ebefa80b4cbc")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 349.504 46.99 0)
 			(effects
 				(font
@@ -14563,7 +14501,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -14645,7 +14583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7444706b-baa1-4f77-9f52-cf3b8e74b0b1")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR023"
 			(at 29.21 148.59 0)
 			(effects
 				(font
@@ -14695,7 +14633,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR024")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -15733,7 +15671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99e18234-b618-48a4-8ac9-f734cf657aa8")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 223.52 107.95 0)
 			(effects
 				(font
@@ -15783,91 +15721,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:APA102-2020")
-		(at 330.2 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a2f1926-a11e-45d7-9619-33823e43c774")
-		(property "Reference" "D4"
-			(at 332.3941 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "APA102-2020"
-			(at 332.3941 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED-APA102-2020"
-			(at 331.47 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
-			(at 332.74 161.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 330.2 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "3c5f1366-21cd-428f-b7e0-107a448ee5b0")
-		)
-		(pin "6"
-			(uuid "86fc598a-5a91-4cf5-8f78-632f98434caa")
-		)
-		(pin "1"
-			(uuid "19c9fa02-c000-4f0c-8d1f-aadb0bc12f6e")
-		)
-		(pin "4"
-			(uuid "df8e213f-f0a5-4c0e-b529-917cd5eea067")
-		)
-		(pin "5"
-			(uuid "d7aadfad-fb57-4689-8f79-c546b8c679be")
-		)
-		(pin "2"
-			(uuid "5888c6b1-e654-4a34-bd51-1c242b05788c")
-		)
-		(instances
-			(project ""
-				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "D4")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -15944,7 +15798,7 @@
 		(at 74.93 251.46 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9d6037ef-7486-4a40-9338-72f2505023f8")
@@ -16010,7 +15864,7 @@
 		(at 251.46 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16249,7 +16103,7 @@
 		(at 187.96 250.19 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16312,33 +16166,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 345.44 97.79 0)
-		(mirror y)
+		(lib_id "Device:R")
+		(at 340.36 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a6542602-3a94-4409-bb8e-1d687f914f6f")
-		(property "Reference" "J10"
-			(at 348.234 99.06 0)
+		(uuid "a1e72407-aef5-47f9-a26d-7f2312a1ed6a")
+		(property "Reference" "R25"
+			(at 341.884 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "ENC_I"
-			(at 349.504 97.028 0)
+		(property "Value" "10k"
+			(at 341.884 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
-			(at 345.44 97.79 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 338.582 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16347,7 +16202,93 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 97.79 0)
+			(at 340.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 340.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Eurocircuits"
+			(at 340.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier PN" "GPR040210K"
+			(at 340.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd52a3f8-cd4f-4839-9763-46a38d57b788")
+		)
+		(pin "2"
+			(uuid "4706be22-5f47-4030-be8e-e08634993db0")
+		)
+		(instances
+			(project "AM32_NXP_version"
+				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 346.71 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6542602-3a94-4409-bb8e-1d687f914f6f")
+		(property "Reference" "J11"
+			(at 349.504 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ENC_I"
+			(at 350.774 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 346.71 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16356,7 +16297,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 345.44 97.79 0)
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16365,7 +16306,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 345.44 97.79 0)
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16374,7 +16315,7 @@
 			)
 		)
 		(property "MFPN" ""
-			(at 345.44 97.79 0)
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16383,7 +16324,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 345.44 97.79 0)
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16392,7 +16333,7 @@
 			)
 		)
 		(property "Supplier PN" ""
-			(at 345.44 97.79 0)
+			(at 346.71 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16406,7 +16347,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J10")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -16418,11 +16359,11 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a86bec02-8546-4092-a59c-bbaefb9b3801")
-		(property "Reference" "J9"
+		(property "Reference" "J7"
 			(at 35.56 70.866 0)
 			(effects
 				(font
@@ -16507,7 +16448,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J9")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -16518,7 +16459,7 @@
 		(at 374.65 218.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16667,6 +16608,124 @@
 		)
 	)
 	(symbol
+		(lib_id "RGB_LED:BB-2020BGR-TRB")
+		(at 325.12 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afa7aecf-8aa2-4298-b092-3bbaa7df733a")
+		(property "Reference" "U5"
+			(at 332.3941 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BB-2020BGR-TRB"
+			(at 332.3941 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RGB_LED:BB-2020BGR-TRB"
+			(at 330.2 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.americanbrightled.com/pdffiles/led-components/plcc/BB-2020BGR-TRB.pdf"
+			(at 377.698 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Addressable, Dimmable, 2020 RGB LED"
+			(at 352.806 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "American Bright Optoelectronics Corporation"
+			(at 325.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFPN" "BB-2020BGR-TRB"
+			(at 325.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "DigiKey"
+			(at 325.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 325.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd1323a0-f31f-4616-941c-da62eaae9012")
+		)
+		(pin "2"
+			(uuid "78249cfa-25e6-4e78-b14e-8994d3b2ae1f")
+		)
+		(pin "4"
+			(uuid "2f50801f-3790-4bf3-b2c5-3c01fc6e31c1")
+		)
+		(pin "3"
+			(uuid "874e6a20-aa33-45a6-8c8f-38cd03a50999")
+		)
+		(pin "6"
+			(uuid "23987db8-5e42-427a-be30-31d7b7314c0b")
+		)
+		(pin "5"
+			(uuid "8e460d17-e64c-4ba9-8b75-4a68cd694ed2")
+		)
+		(instances
+			(project ""
+				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 44.45 256.54 0)
 		(unit 1)
@@ -16763,7 +16822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b482df6f-685e-4e7b-87bc-48133c71a943")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 29.21 121.92 0)
 			(effects
 				(font
@@ -16813,7 +16872,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -16825,11 +16884,11 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b5001575-ab29-4bba-98b6-36573337dbce")
-		(property "Reference" "J7"
+		(property "Reference" "J6"
 			(at 35.814 64.77 0)
 			(effects
 				(font
@@ -16914,7 +16973,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J7")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -17058,11 +17117,11 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bf1d4480-a017-4bff-9409-b88fa7a3a98f")
-		(property "Reference" "J1"
+		(property "Reference" "J3"
 			(at 349.504 41.91 0)
 			(effects
 				(font
@@ -17111,7 +17170,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -17184,6 +17243,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 347.98 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c671b9c0-95a4-4a41-ab98-adfd8cf10f25")
+		(property "Reference" "#PWR049"
+			(at 347.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 347.98 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 347.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 347.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 347.98 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28ff0368-ac4f-4ba6-a597-61418cdb7884")
+		)
+		(instances
+			(project "AM32_NXP_version"
+				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 180.34 210.82 90)
 		(unit 1)
@@ -17192,7 +17317,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c6af094d-2ce7-43db-8659-445aaa05efe2")
-		(property "Reference" "R9"
+		(property "Reference" "R6"
 			(at 180.34 205.994 90)
 			(effects
 				(font
@@ -17262,7 +17387,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R9")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -17383,7 +17508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c919bfeb-43e0-4797-8bd7-fcfb6287e26c")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 147.32 105.41 0)
 			(effects
 				(font
@@ -17433,7 +17558,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -17753,7 +17878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd0b1dd9-a67c-4a80-a145-1bcf7101ab37")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR03"
 			(at 44.45 86.36 0)
 			(effects
 				(font
@@ -17803,7 +17928,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR07")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -17920,7 +18045,7 @@
 		(at 218.44 226.06 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d3683079-21ad-48a1-bd79-408aff48a542")
@@ -17989,7 +18114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5f1caa3-6bf7-4b16-a19b-02c12a6ba26b")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 57.15 121.92 0)
 			(effects
 				(font
@@ -18039,7 +18164,7 @@
 		(instances
 			(project ""
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -18179,7 +18304,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 339.09 133.35 0)
+		(at 340.36 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18188,7 +18313,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8e2efbd-51e0-4239-972e-a9192c49e23e")
 		(property "Reference" "#PWR021"
-			(at 339.09 139.7 0)
+			(at 340.36 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18197,7 +18322,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 339.09 138.43 0)
+			(at 340.36 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18205,7 +18330,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 339.09 133.35 0)
+			(at 340.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18214,7 +18339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 133.35 0)
+			(at 340.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18223,7 +18348,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 339.09 133.35 0)
+			(at 340.36 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18401,7 +18526,7 @@
 		(at 172.72 226.06 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "dbb835a4-b25d-4c6b-b490-bfe9e24e7005")
@@ -18901,7 +19026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9e09557-1064-4d7b-a14b-7667c16af4c7")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR022"
 			(at 210.82 149.86 0)
 			(effects
 				(font
@@ -18951,7 +19076,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "#PWR023")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -19204,7 +19329,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f022db21-aca0-4820-9e19-46074250d3d1")
-		(property "Reference" "R10"
+		(property "Reference" "R7"
 			(at 226.06 205.994 90)
 			(effects
 				(font
@@ -19274,7 +19399,7 @@
 		(instances
 			(project "AM32_NXP_version"
 				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
-					(reference "R10")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -19286,7 +19411,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f66fccb4-d538-4426-9cea-90978f032956")
@@ -19383,7 +19508,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 345.44 124.46 0)
+		(at 346.71 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19392,7 +19517,7 @@
 		(fields_autoplaced yes)
 		(uuid "f75a6378-d03b-4671-92d9-326f4ce71a44")
 		(property "Reference" "J13"
-			(at 347.98 124.4599 0)
+			(at 351.282 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19401,7 +19526,7 @@
 			)
 		)
 		(property "Value" "DEBUG"
-			(at 347.98 126.9999 0)
+			(at 351.282 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19410,7 +19535,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19419,7 +19544,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19428,7 +19553,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19437,7 +19562,7 @@
 			)
 		)
 		(property "MF" "JST"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19446,7 +19571,7 @@
 			)
 		)
 		(property "MFPN" "BM06B-SRSS-TB"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19455,7 +19580,7 @@
 			)
 		)
 		(property "Supplier" "DigiKey"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19464,7 +19589,7 @@
 			)
 		)
 		(property "Supplier PN" "455-BM06B-SRSS-TBCT-ND"
-			(at 345.44 124.46 0)
+			(at 346.71 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19489,6 +19614,9 @@
 		)
 		(pin "3"
 			(uuid "ef591764-60ef-4ae2-bce3-c75193b145bf")
+		)
+		(pin "MP"
+			(uuid "95c23749-4c6f-49e3-b792-e9b8e0102a40")
 		)
 		(instances
 			(project ""
@@ -19870,7 +19998,7 @@
 		(at 160.02 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "fff0722f-3124-41dd-af87-17b6da4e9a91")
