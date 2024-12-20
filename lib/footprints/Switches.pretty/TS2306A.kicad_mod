@@ -1,0 +1,157 @@
+(footprint "TS2306A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e44653ae-a1d4-4828-9d73-daf82fa3effe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TS2306A"
+		(at 0 -4.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "043c6c66-9d1c-4f87-8faa-918943aeab54")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 -1.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0fe1dae3-18f7-45a3-9299-44a0f6e29a9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303211800_SHOU-HAN-TS2306A-200gf-002_C5363482.pdf"
+		(at 0 3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2193e6cf-dbcf-423f-95a6-05b5e42ab541")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Switch 50mA 3mm 100MΩ 300,000 Times 5V 200gf 2mm 0.6mm Round Button"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd65795f-58ed-49b8-ba91-c02eb172ebf1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.4 -1)
+		(end 1.4 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3adc1fd4-0e1a-4616-a4ae-72e2586e8178")
+	)
+	(fp_line
+		(start -1.4 1)
+		(end 1.4 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4ee4014c-57f5-4e59-aa62-ccadbc88ccad")
+	)
+	(fp_rect
+		(start -1.8 -1.05)
+		(end 1.8 1.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b81b42da-9054-47a4-a2a7-fdfdf15ec854")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -3.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e7808a9a-49e6-40fc-b26a-fcac2b571dec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.625 0)
+		(size 0.55 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "8f43182b-260e-43c1-bbf7-f273f91c407a")
+	)
+	(pad "2" smd roundrect
+		(at 1.625 0)
+		(size 0.55 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "23f6fc38-a13d-4104-9e6d-42a37accf0ff")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "e9e86525-1fed-4619-a85a-cd067c4454f9")
+		(name "KeepOut")
+		(hatch full 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.1 -0.95) (xy -1.05 -1) (xy 0 -1) (xy 1.05 -1) (xy 1.1 -0.95) (xy 1.1 0.95) (xy 1.05 1) (xy -1.05 1)
+				(xy -1.1 0.95)
+			)
+		)
+	)
+)
