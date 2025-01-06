@@ -1,4 +1,8 @@
 (sym_lib_table
   (version 7)
   (lib (name "RGB_LED")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/RGB_LED.kicad_sym")(options "")(descr ""))
+  (lib (name "FET_Nexperia")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/FET_Nexperia.kicad_sym")(options "")(descr ""))
+  (lib (name "Gate_drivers")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/Gate_drivers.kicad_sym")(options "")(descr ""))
+  (lib (name "LDO")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/LDO.kicad_sym")(options "")(descr ""))
+  (lib (name "MCU_NXP_MCX")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/MCU_NXP_MCX.kicad_sym")(options "")(descr ""))
 )
