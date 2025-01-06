@@ -128,4 +128,15 @@
 			"246f7ff8-5a54-40f8-8501-26ffc782e371" "eb0f4e69-f8d3-49f4-b308-ff608f842a3d"
 		)
 	)
+	(model "${KIPRJMOD}/lib/3d-models/WSK1216.step"
+		(offset
+			(xyz 5.5 -1 1.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
 )
