@@ -6329,7 +6329,7 @@
 	)
 	(text "JST-SH BM06B-SRSS"
 		(exclude_from_sim no)
-		(at 359.918 118.11 0)
+		(at 361.696 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
