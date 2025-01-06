@@ -5,12 +5,13 @@
 	(uuid "2f31c863-73f6-40da-99b0-f0fd74baf06a")
 	(paper "A3")
 	(title_block
-		(title "AM32 ESC with MCXA153")
-		(date "2024-12-20")
-		(rev "0")
+		(title "AM32 ESC with MCXA153VFM")
+		(date "2025-01-06")
+		(rev "X1")
 		(company "NXP Semiconductors")
 		(comment 1 "Designer: Youri Tils")
 		(comment 2 "Reviewer: Jari van Ewijk, Peter van der Perk")
+		(comment 3 "For Internal Use Only")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Current:INA180B1"
@@ -2723,7 +2724,7 @@
 				)
 			)
 		)
-		(symbol "MCU_NXP_MCX:MCXA13x_QFN32"
+		(symbol "MCU_NXP_MCX:MCXA1xxVFM"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2735,7 +2736,7 @@
 					)
 				)
 			)
-			(property "Value" "MCXA13x_QFN32"
+			(property "Value" "MCXA1xxVFM"
 				(at 12.192 21.844 0)
 				(effects
 					(font
@@ -2761,8 +2762,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at -7.62 3.81 0)
+			(property "Description" "MCXA153, A152, A143, A142, A133, A132"
+				(at 26.924 -28.702 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2770,7 +2771,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCXA13x_QFN32_1_1"
+			(symbol "MCXA1xxVFM_1_1"
 				(rectangle
 					(start -12.7 20.32)
 					(end 12.7 -20.32)
@@ -6317,13 +6318,36 @@
 		)
 		(uuid "fe48cb12-15ed-4ff7-8da0-fd341cadeeff")
 	)
-	(text "Is optional,\nSo solder pads"
+	(text_box "Revision X1: Created initial schematic"
 		(exclude_from_sim no)
-		(at 362.458 68.834 0)
+		(at 247.015 252.984 0)
+		(size 52.959 32.004)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 132 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "cac058fe-7006-4872-9dfe-8dab9bf3e16a")
+	)
+	(text "Optional solder pads\nfor future prototyping"
+		(exclude_from_sim no)
+		(at 355.6 69.342 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "48e7fdbc-da62-46a2-9b10-0e645e52416e")
 	)
@@ -6337,19 +6361,9 @@
 		)
 		(uuid "50e85be0-e269-4167-9060-d52be819ed6b")
 	)
-	(text "No standard LED connector, \nso solder pads"
-		(exclude_from_sim no)
-		(at 369.824 153.924 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5913a253-fe6a-4329-9906-df18f02a6f50")
-	)
 	(text "R_DT(kOhm)=Deadtime(ns)/5"
 		(exclude_from_sim no)
-		(at 202.946 157.734 0)
+		(at 200.66 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6376,6 +6390,28 @@
 			)
 		)
 		(uuid "a07d27bb-c4b4-4f96-81c9-0433a4ac6251")
+	)
+	(text "Optional solder pads\nfor future prototyping"
+		(exclude_from_sim no)
+		(at 356.108 154.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c65e3f54-bb5d-43e1-8411-ff7f4d5e77a2")
+	)
+	(text "MCXA153VFM"
+		(exclude_from_sim no)
+		(at 142.748 154.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f36e2010-4684-411e-824b-a549f441813d")
 	)
 	(label "BLOW"
 		(at 154.94 116.84 0)
@@ -9385,7 +9421,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DRV8300N"
+		(property "Value" "DRV8300N or FD6288 or equivalent"
 			(at 227.838 149.352 0)
 			(effects
 				(font
@@ -17337,7 +17373,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_NXP_MCX:MCXA13x_QFN32")
+		(lib_id "MCU_NXP_MCX:MCXA1xxVFM")
 		(at 139.7 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17354,7 +17390,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCXA13x_QFN32"
+		(property "Value" "MCXA1xxVFM"
 			(at 142.748 151.892 0)
 			(effects
 				(font
@@ -17381,8 +17417,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 132.08 123.19 0)
+		(property "Description" "MCXA153, A152, A143, A142, A133, A132"
+			(at 166.624 155.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
