@@ -2,7 +2,10 @@
 
 MR-ESC-MCXA-AM32 is a proof of concept Drone motor ESC (Electronic Speed Controller) motor controller, 
 using NXP MCXA153 MCU and running the opensource AM32 software.
-Other NXP or Custom software can also be made to run on this design.
+
+NOTE: This design is not supported by NXP motor control framework tools 
+(it could of course be made to run with modifications)
+
 Design files are in KiCAD.
 
 Target MCU in AM32 directories is "a153"
