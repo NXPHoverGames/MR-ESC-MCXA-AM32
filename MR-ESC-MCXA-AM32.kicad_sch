@@ -20190,6 +20190,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 41.91 200.66)
+		(size 41.91 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e9f7c3d5-266a-45c4-b51a-682c8dc74ede")
+		(property "Sheetname" "ME-ESC-AM32 Block Diagram"
+			(at 41.91 199.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESC-AM32_Block Diagram.kicad_sch"
+			(at 41.91 212.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MR-ESC-MCXA-AM32"
+				(path "/2f31c863-73f6-40da-99b0-f0fd74baf06a"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
