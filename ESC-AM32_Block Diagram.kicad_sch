@@ -13,10 +13,12 @@
 		(end 166.37 129.286)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
+			(color 0 0 255 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 316efea2-6647-47a5-89cd-33286216ace7)
 	)
@@ -25,10 +27,11 @@
 		(end 144.399 135.763)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 3c78ad7d-6a77-4057-b75a-c5f762c7c307)
 	)
@@ -37,10 +40,11 @@
 		(end 160.02 103.378)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 102 163 255 1)
 		)
 		(uuid 45bae250-f325-4e32-ae8a-85d91d682550)
 	)
@@ -49,22 +53,37 @@
 		(end 219.71 103.378)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 577aaf5b-5b61-445a-af0d-8ceef4e422ab)
+	)
+	(rectangle
+		(start 18.542 89.916)
+		(end 42.672 106.426)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 194 194 194 1)
+		)
+		(uuid 8813eb39-824f-405e-a291-8f6caf12d65a)
 	)
 	(rectangle
 		(start 90.17 112.903)
 		(end 114.3 129.413)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 8b67438a-eea0-4381-91af-010d65d8d559)
 	)
@@ -73,10 +92,11 @@
 		(end 76.2 78.613)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 8d7ad6b7-8b76-49fd-bb25-094c12423649)
 	)
@@ -85,16 +105,17 @@
 		(end 190.5 103.378)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 194 194 194 1)
 		)
 		(uuid 90474e88-01af-41c8-b65e-28707b282667)
 	)
 	(circle
-		(center 248.92 81.788)
-		(radius 12.7)
+		(center 265.811 80.645)
+		(radius 7.8996)
 		(stroke
 			(width 0)
 			(type default)
@@ -115,6 +136,18 @@
 			(type none)
 		)
 		(uuid dcf79363-c6a4-4c67-8a52-ccf5aff1f2f2)
+	)
+	(rectangle
+		(start 232.664 70.739)
+		(end 255.524 89.154)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fb5ff53a-1cc7-4e21-b1ed-cf6c2e47ae79)
 	)
 	(text "MCU\nMCXA133 / MXCA135"
 		(exclude_from_sim no)
@@ -176,6 +209,16 @@
 		)
 		(uuid "3ddef455-5a9f-4287-b1e4-0464d4b557ab")
 	)
+	(text "RC 3-PIN\nConnector"
+		(exclude_from_sim no)
+		(at 30.48 98.425 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "62773344-aa0d-4306-aab0-16220533bb0e")
+	)
 	(text "2S-6S Lipo battery (~6V-26V)"
 		(exclude_from_sim no)
 		(at 59.436 43.434 0)
@@ -185,6 +228,16 @@
 			)
 		)
 		(uuid "6cc76a01-aeb3-4f18-935e-c75fe1d2cd91")
+	)
+	(text "3.5mm \nBullet\nConnectors"
+		(exclude_from_sim no)
+		(at 243.586 79.248 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "714ff301-9774-418c-939a-29c68a92279d")
 	)
 	(text "RC-PWM Input\nDSDHOT/BDSHOT"
 		(exclude_from_sim no)
@@ -208,7 +261,7 @@
 	)
 	(text "BLDC\nMotor"
 		(exclude_from_sim no)
-		(at 249.174 80.518 0)
+		(at 266.065 79.375 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -255,6 +308,16 @@
 			(type default)
 		)
 		(uuid "05fdaad2-5785-4cb2-b874-4b42cba1ea4c")
+	)
+	(polyline
+		(pts
+			(xy 255.27 80.645) (xy 258.445 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09584816-3f63-490d-971f-96fd855ebbf4")
 	)
 	(polyline
 		(pts
@@ -330,7 +393,7 @@
 	)
 	(polyline
 		(pts
-			(xy 229.235 81.788) (xy 229.235 120.523)
+			(xy 229.235 80.645) (xy 229.235 120.523)
 		)
 		(stroke
 			(width 0)
@@ -412,7 +475,7 @@
 	)
 	(polyline
 		(pts
-			(xy 219.71 81.788) (xy 236.855 81.788)
+			(xy 219.71 80.645) (xy 233.045 80.645)
 		)
 		(stroke
 			(width 0)
